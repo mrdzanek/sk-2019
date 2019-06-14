@@ -36,3 +36,33 @@ adres rozgłoszeniowy 172.22.159.255
 host min 172.22.128.1
 host max 172.22.159.254
 ile hostów? 8190
+
+Komendy:
+
+PC0:
+
+ip addr flush enp0s3
+
+ip addr add 172.22.160.1/23 dev enp0s3
+
+ip addr add 172.22.128.1/19 dev enp0s8
+
+echo 1 > /proc/sys/net/ipv4/ip_foward 
+
+PC1:
+
+ip addr flush enp0s3
+
+ip addr add 172.22.160.10/23 dev enp0s3
+
+ip route add default via 172.22.160.1
+
+PC2:
+
+ip addr flush enp0s3
+
+ip addr add 172.22.128.10/19 dev enp0s3
+
+ip route add default via 172.22.128.1
+
+ping 172.22.160.10
