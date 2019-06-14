@@ -11,4 +11,9 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
    * Przygotuj dokumentację powyższej architektury w formie graficznej w programie ``DIA``
    
  Rozwiązanie:
- 
+ od providera: 172.22.128.0/17
+ adres sieci: 172.22.128.0
+ adres rozgłoszeniowy: 172.22.255.255
+ host min: 172.22.128.1
+ host max: 172.22.255.254
+ ile hostów? : 32766
