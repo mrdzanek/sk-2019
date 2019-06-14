@@ -12,7 +12,8 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
    --------
  Rozwiązanie
  od providera 172.22.128.0/17
- adres sieci 172.22.128.0
+ adres sieci 172.22.128.0/17
+ maska 255.255.128.0
  adres rozgłoszeniowy 172.22.255.255
  host min 172.22.128.1
  host max 172.22.255.254
@@ -20,6 +21,18 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
 
 LAN1 500 hostów
 maska /23 2^(32-23)-2 = 2^9 - 2 = 510 hostów
+adres sieci 172.22.128.0/23
+maska 255.255.254.0
+adres rozgłoszeniowy 172.22.129.255
+host min 172.22.128.1
+host max 172.22.129.254
+ile hostów? 510
 
 LAN2 5000 hostów
 maska /19 2^(32-19)-2 = 2^13 -2 = 8190 hostów
+adres sieci 172.22.128.0/19
+maska 255.255.224.0
+adres rozgłoszeniowy 172.22.159.255
+host min 172.22.128.1
+host max 172.22.159.254
+ile hostów? 8190
