@@ -9,11 +9,17 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
    * Zapewnij komunikację z siecią internet na poziomie ``LAN1`` oraz ``LAN2``
    * Dokonaj takiego podziału sieci o adresie ``172.22.128.0/17`` aby w ``LAN1`` można było zaadresować ``500`` adresów natomiast w LAN2 ``5000`` adresów    
    * Przygotuj dokumentację powyższej architektury w formie graficznej w programie ``DIA``
-   
- Rozwiązanie:
- od providera: 172.22.128.0/17
- adres sieci: 172.22.128.0
- adres rozgłoszeniowy: 172.22.255.255
- host min: 172.22.128.1
- host max: 172.22.255.254
- ile hostów? : 32766
+   --------
+ Rozwiązanie
+ od providera 172.22.128.0/17
+ adres sieci 172.22.128.0
+ adres rozgłoszeniowy 172.22.255.255
+ host min 172.22.128.1
+ host max 172.22.255.254
+ ile hostów? 32766
+
+LAN1 500 hostów
+maska /23 2^(32-23)-2 = 2^9 - 2 = 510 hostów
+
+LAN2 5000 hostów
+maska /19 2^(32-19)-2 = 2^13 -2 = 8190 hostów
