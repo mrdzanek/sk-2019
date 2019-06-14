@@ -21,11 +21,11 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
 
 LAN1 500 hostów
 maska /23 2^(32-23)-2 = 2^9 - 2 = 510 hostów
-adres sieci 172.22.128.0/23
+adres sieci 172.22.160.0/23
 maska 255.255.254.0
-adres rozgłoszeniowy 172.22.129.255
-host min 172.22.128.1
-host max 172.22.129.254
+adres rozgłoszeniowy 172.22.161.255
+host min 172.22.160.1
+host max 172.22.161.254
 ile hostów? 510
 
 LAN2 5000 hostów
