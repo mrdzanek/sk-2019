@@ -45,3 +45,8 @@
 * W specyfikacji uwzględnij wielkości sieci oraz ich adresy
 * W specyfikacji uwzględnij konfigurację tablicy routingu
 * Dokumentację graficzną stworzonej architektury przygotuj w programie ``DIA`` lub podobnym
+
+ROZWIĄZANIE:
+
+![SK12](SK12.svg)
+
